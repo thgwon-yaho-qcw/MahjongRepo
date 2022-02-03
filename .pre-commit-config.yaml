@@ -11,6 +11,10 @@ repos:
   - id: check-builtin-literals
   - id: check-docstring-first
   - id: name-tests-test
+    # Use args: ['--django'] to match test*.py instead.
+    args:
+    - --django
+    exclude: tests/fixtures
 - repo: https://github.com/timothycrosley/isort
   rev: 5.8.0
   hooks:
@@ -34,9 +38,3 @@ repos:
     language: python
     types: [python]
     args: ['--config-file', './setup.cfg']
-  - id: pytest
-    name: pytest
-    entry: pytest
-    language: python
-    types: [python]
-    pass_filenames: false
