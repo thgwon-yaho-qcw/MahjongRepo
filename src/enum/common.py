@@ -12,3 +12,11 @@ class TileType(UpperStrEnum):
     SOU = auto()
     WIND = auto()
     DRAGON = auto()
+
+
+class CallType(UpperStrEnum):
+    CHII = auto()
+    PON = auto()
+    CONCEALED_KAN = auto()
+    BIG_MELDED_KAN = auto()
+    SMALL_MELDED_KAN = auto()
